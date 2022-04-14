@@ -1,0 +1,28 @@
+linters-settings:
+  timeout: 5m
+  issues-exit-code: 2 # 错误时的退出码
+  
+misspell:
+  locale: US
+
+run:
+  go: '1.18'
+
+linters:
+  disable-all: true
+  enable:
+  - typecheck
+  - goimports
+  - misspell
+  - govet
+  - revive
+  - ineffassign
+  - gosimple
+  - deadcode
+  - structcheck
+  - unused
+  - errcheck
+  - varcheck
+
+service:
+  golangci-lint-version: 1.45.2
