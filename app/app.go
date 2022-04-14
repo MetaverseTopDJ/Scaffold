@@ -5,10 +5,9 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"scaffold/logger"
+	"scaffold/util"
 	"time"
-
-	"gitlab.ahsoq.com/Raven/scaffold/logger"
-	"gitlab.ahsoq.com/Raven/scaffold/util"
 )
 
 var TimeLocation *time.Location // 时区

@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"io/ioutil"
 	"os"
+	"scaffold/util"
 	"strings"
 
 	"github.com/spf13/viper"
-	"gitlab.ahsoq.com/Raven/scaffold/util"
 )
 
 var ViperConfMap map[string]*viper.Viper

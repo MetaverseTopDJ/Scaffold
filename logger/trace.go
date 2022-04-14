@@ -8,10 +8,9 @@ import (
 	"math/rand"
 	"net"
 	"os"
+	"scaffold/util"
 	"strings"
 	"time"
-
-	"gitlab.ahsoq.com/Raven/scaffold/util"
 )
 
 const (

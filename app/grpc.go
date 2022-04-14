@@ -5,10 +5,10 @@ import (
 	"net"
 	"os"
 	"os/signal"
+	"scaffold/logger"
 	"syscall"
 
 	"github.com/facebookgo/grace/gracenet"
-	"gitlab.ahsoq.com/Raven/scaffold/logger"
 	"google.golang.org/grpc"
 )
 

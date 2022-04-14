@@ -3,10 +3,9 @@ package app
 import (
 	"errors"
 	"fmt"
+	"scaffold/model"
+	"scaffold/util"
 	"time"
-
-	"gitlab.ahsoq.com/Raven/scaffold/model"
-	"gitlab.ahsoq.com/Raven/scaffold/util"
 
 	"github.com/gomodule/redigo/redis"
 )

@@ -2,8 +2,7 @@ package main
 
 import (
 	"log"
-
-	"gitlab.ahsoq.com/Raven/scaffold/app"
+	"scaffold/app"
 )
 
 /* 示例代码 */

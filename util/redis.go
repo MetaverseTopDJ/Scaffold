@@ -2,8 +2,7 @@ package util
 
 import (
 	"errors"
-
-	"gitlab.ahsoq.com/Raven/scaffold/model"
+	"scaffold/model"
 )
 
 type RedisConfig struct {

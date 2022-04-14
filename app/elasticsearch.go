@@ -3,11 +3,11 @@ package app
 import (
 	"context"
 	"fmt"
+	"scaffold/util"
 	"strconv"
 
 	"github.com/elastic/go-elasticsearch/v7"
 	"github.com/elastic/go-elasticsearch/v7/esapi"
-	"gitlab.ahsoq.com/Raven/scaffold/util"
 )
 
 type ElasticsearchConfig struct {

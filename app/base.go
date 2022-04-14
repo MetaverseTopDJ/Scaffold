@@ -1,8 +1,6 @@
 package app
 
-import (
-	"gitlab.ahsoq.com/Raven/scaffold/util"
-)
+import "scaffold/util"
 
 // BaseConf 全局变量
 var BaseConf *BaseConfig

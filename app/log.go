@@ -1,8 +1,8 @@
 package app
 
 import (
-	"gitlab.ahsoq.com/Raven/scaffold/logger"
-	"gitlab.ahsoq.com/Raven/scaffold/util"
+	"scaffold/logger"
+	"scaffold/util"
 )
 
 var LogConf *LogConfig

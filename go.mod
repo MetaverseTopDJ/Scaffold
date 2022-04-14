@@ -1,4 +1,4 @@
-module gitlab.ahsoq.com/Raven/scaffold
+module scaffold
 
 go 1.18
 

@@ -5,10 +5,9 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"scaffold/util"
 	"strings"
 	"time"
-
-	"gitlab.ahsoq.com/Raven/scaffold/util"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
