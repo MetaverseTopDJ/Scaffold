@@ -27,7 +27,7 @@ type HttpConfig struct {
 }
 
 func InitBaseConfig(path string) error {
-	BaseConf := &BaseConfig{}
+	BaseConf = &BaseConfig{}
 	if err := util.ParseConfig(path, BaseConf); err != nil {
 		return err
 	}

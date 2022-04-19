@@ -54,7 +54,7 @@ func InitModule(configPath string, modules []string) error {
 
 	// 加载 Log 设置
 	if util.InSliceString("log", modules) {
-		if err := InitBaseConfig(util.GetConfigPath("log")); err != nil {
+		if err := InitLogConfig(util.GetConfigPath("log")); err != nil {
 			fmt.Printf("[ERROR] %s  InitBaseConfig: %s\n", time.Now().Format(util.DateTimeFormat), err.Error())
 		}
 		log.Printf("[INFO] %s\n", " Base Config Done.")

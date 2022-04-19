@@ -45,6 +45,21 @@ func TimeFromUTCString(datetime string) (time.Time, error) {
 	return time.Parse(UTCDateTimeFormat, datetime)
 }
 
+// TimeStampAfterSeconds 返回多少秒后的时间戳
+func TimeStampAfterSeconds(seconds int64) int64 {
+	return time.Now().Unix() + seconds
+}
+
+// TimeStampAfterMillSeconds 返回 多少秒后的 毫秒时间戳
+func TimeStampAfterMillSeconds(seconds int64) int64 {
+	return time.Now().UnixMilli() + (seconds * 1000)
+}
+
+// TimeFromMillSeconds 毫秒时间戳 转换成时间
+func TimeFromMillSeconds(ms int64) time.Time {
+	return time.UnixMilli(ms)
+}
+
 // GetNow 获取当前时间
 func GetNow() time.Time {
 	return time.Now()
