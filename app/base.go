@@ -1,6 +1,6 @@
 package app
 
-import "scaffold/util"
+import "github.com/MetaverseTopDJ/Scaffold/util"
 
 // BaseConf 全局变量
 var BaseConf *BaseConfig

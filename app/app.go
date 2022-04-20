@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"scaffold/logger"
-	"scaffold/util"
 	"time"
+
+	"github.com/MetaverseTopDJ/Scaffold/logger"
+	"github.com/MetaverseTopDJ/Scaffold/util"
 )
 
 var TimeLocation *time.Location // 时区

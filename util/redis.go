@@ -2,7 +2,8 @@ package util
 
 import (
 	"errors"
-	"scaffold/model"
+
+	"github.com/MetaverseTopDJ/Scaffold/model"
 )
 
 type RedisConfig struct {

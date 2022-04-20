@@ -5,8 +5,9 @@ import (
 	"net"
 	"os"
 	"os/signal"
-	"scaffold/logger"
 	"syscall"
+
+	"github.com/MetaverseTopDJ/Scaffold/logger"
 
 	"github.com/facebookgo/grace/gracenet"
 	"google.golang.org/grpc"

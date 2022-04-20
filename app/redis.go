@@ -3,9 +3,10 @@ package app
 import (
 	"errors"
 	"fmt"
-	"scaffold/model"
-	"scaffold/util"
 	"time"
+
+	"github.com/MetaverseTopDJ/Scaffold/model"
+	"github.com/MetaverseTopDJ/Scaffold/util"
 
 	"github.com/gomodule/redigo/redis"
 )

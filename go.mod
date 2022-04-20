@@ -1,4 +1,4 @@
-module scaffold
+module github.com/MetaverseTopDJ/Scaffold
 
 go 1.18
 

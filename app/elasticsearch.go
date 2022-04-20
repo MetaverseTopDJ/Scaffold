@@ -3,8 +3,9 @@ package app
 import (
 	"context"
 	"fmt"
-	"scaffold/util"
 	"strconv"
+
+	"github.com/MetaverseTopDJ/Scaffold/util"
 
 	"github.com/elastic/go-elasticsearch/v7"
 	"github.com/elastic/go-elasticsearch/v7/esapi"

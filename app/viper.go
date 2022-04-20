@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"io/ioutil"
 	"os"
-	"scaffold/util"
 	"strings"
+
+	"github.com/MetaverseTopDJ/Scaffold/util"
 
 	"github.com/spf13/viper"
 )

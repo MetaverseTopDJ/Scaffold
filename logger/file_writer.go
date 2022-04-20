@@ -7,8 +7,9 @@ import (
 	"fmt"
 	"os"
 	"path"
-	"scaffold/util"
 	"time"
+
+	"github.com/MetaverseTopDJ/Scaffold/util"
 )
 
 var pathVariableTable map[byte]func(*time.Time) int // 日志路径变量，避免当个日志过大

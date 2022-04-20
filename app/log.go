@@ -1,8 +1,8 @@
 package app
 
 import (
-	"scaffold/logger"
-	"scaffold/util"
+	"github.com/MetaverseTopDJ/Scaffold/logger"
+	"github.com/MetaverseTopDJ/Scaffold/util"
 )
 
 var LogConf *LogConfig

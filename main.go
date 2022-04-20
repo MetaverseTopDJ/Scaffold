@@ -2,7 +2,8 @@ package main
 
 import (
 	"log"
-	"scaffold/app"
+
+	"github.com/MetaverseTopDJ/Scaffold/app"
 )
 
 /* 示例代码 */

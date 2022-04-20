@@ -8,9 +8,10 @@ import (
 	"math/rand"
 	"net"
 	"os"
-	"scaffold/util"
 	"strings"
 	"time"
+
+	"github.com/MetaverseTopDJ/Scaffold/util"
 )
 
 const (

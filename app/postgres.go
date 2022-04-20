@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"scaffold/util"
 	"strings"
 	"time"
+
+	"github.com/MetaverseTopDJ/Scaffold/util"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
