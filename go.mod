@@ -4,7 +4,6 @@ go 1.18
 
 require (
 	github.com/facebookgo/grace v0.0.0-20180706040059-75cf19382434
-	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/spf13/viper v1.9.0
 	google.golang.org/grpc v1.40.0
 	gorm.io/driver/mysql v1.3.3
@@ -19,6 +18,7 @@ require (
 	github.com/facebookgo/subset v0.0.0-20200203212716-c811ad88dec4 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/gomodule/redigo v1.8.8 // indirect
 	golang.org/x/net v0.0.0-20210503060351-7fd8e65b6420 // indirect
 	google.golang.org/genproto v0.0.0-20210828152312-66f60bf46e71 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
