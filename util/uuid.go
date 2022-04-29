@@ -15,7 +15,9 @@ func GenUUID() (uuid string, err error) {
 	if err != nil {
 		return "", err
 	}
-	i, err = snowFlake.Generate()
+	if i, err = snowFlake.Generate(); err != nil {
+		return "", err
+	}
 	m := md5.New()
 	m.Write([]byte(strconv.Itoa(int(i))))
 	uuid = hex.EncodeToString(m.Sum(nil))

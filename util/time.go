@@ -3,11 +3,14 @@ package util
 import "time"
 
 const (
-	TZDateTimeFormat  = "2006-01-02T15:04:05Z"
-	UTCDateTimeFormat = "2006-01-02T15:04:05Z07:00"
-	DateTimeFormat    = "2006-01-02 15:04:05"
-	DateFormat        = "2006-01-02"
-	HourFormat        = "15:04"
+	TZDateTimeFormat        = "2006-01-02T15:04:05Z"
+	UTCDateTimeFormat       = "2006-01-02T15:04:05Z07:00"
+	UTCDateTimeMinuteFormat = "2006-01-02T15:04Z07:00"
+	DateTimeFormat          = "2006-01-02 15:04:05"
+	DateFormat              = "2006-01-02"
+	DateMinuteFormat        = "2006-01-02 15:04"
+	HourFormat              = "15:04"
+	DateTimeStringFormat    = "20060102150405"
 )
 
 // HourTime 时间格式转换
@@ -20,9 +23,24 @@ func DateTime(time time.Time) string {
 	return time.Format(DateTimeFormat)
 }
 
+// DateTimeString 时间格式转换
+func DateTimeString(time time.Time) string {
+	return time.Format(DateTimeStringFormat)
+}
+
+// DateMinuteTime 时间格式转换
+func DateMinuteTime(time time.Time) string {
+	return time.Format(DateMinuteFormat)
+}
+
 // UTCDateTime 时间格式转换(UTC)
 func UTCDateTime(time time.Time) string {
 	return time.Format(UTCDateTimeFormat)
+}
+
+// UTCDateMinuteTime 时间格式转换(UTC)
+func UTCDateMinuteTime(time time.Time) string {
+	return time.Format(UTCDateTimeMinuteFormat)
 }
 
 // Date 日期格式转换
