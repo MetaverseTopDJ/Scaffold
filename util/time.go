@@ -78,6 +78,11 @@ func TimeFromMillSeconds(ms int64) time.Time {
 	return time.UnixMilli(ms)
 }
 
+// StringFromTimestamp 时间戳 转换为 字符串
+func DateTimeFromTimestamp(timestamp int64) string {
+	return time.Unix(timestamp, 0).Format(DateTimeFormat)
+}
+
 // GetNow 获取当前时间
 func GetNow() time.Time {
 	return time.Now()
