@@ -13,6 +13,24 @@ const (
 	DateTimeStringFormat    = "20060102150405"
 )
 
+// StartEndFromString 时间字符串 转换为时间
+func StartEndFromString(s, e, format string) (start, end time.Time, err error) {
+	start, err = time.Parse(format, s)
+	if err != nil {
+		return
+	}
+	end, err = time.Parse(format, e)
+	if err != nil {
+		return
+	}
+	return
+}
+
+// TimeToString 时间转换为字符串
+func TimeToString(t time.Time, f string) string {
+	return t.Format(f)
+}
+
 // HourTime 时间格式转换
 func HourTime(time time.Time) string {
 	return time.Format(HourFormat)
@@ -60,12 +78,12 @@ func TimeFromTZDateString(datetime string) (time.Time, error) {
 
 // TimeFromUTCString UTC字符串转换为时间
 func TimeFromUTCString(datetime string) (time.Time, error) {
-	return time.Parse(UTCDateTimeMinuteFormat, datetime)
+	return time.Parse(UTCDateTimeFormat, datetime)
 }
 
 // TimeMinuteFromUTCString UTC字符串转换为时间(精确到分)
 func TimeMinuteFromUTCString(datetime string) (time.Time, error) {
-	return time.Parse(UTCDateTimeFormat, datetime)
+	return time.Parse(UTCDateTimeMinuteFormat, datetime)
 }
 
 // TimeStampAfterSeconds 返回多少秒后的时间戳
