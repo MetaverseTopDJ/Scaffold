@@ -60,6 +60,11 @@ func TimeFromTZDateString(datetime string) (time.Time, error) {
 
 // TimeFromUTCString UTC字符串转换为时间
 func TimeFromUTCString(datetime string) (time.Time, error) {
+	return time.Parse(UTCDateTimeMinuteFormat, datetime)
+}
+
+// TimeMinuteFromUTCString UTC字符串转换为时间(精确到分)
+func TimeMinuteFromUTCString(datetime string) (time.Time, error) {
 	return time.Parse(UTCDateTimeFormat, datetime)
 }
 
